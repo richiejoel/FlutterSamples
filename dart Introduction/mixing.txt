@@ -1,0 +1,56 @@
+void main(){
+ 
+    final pato = new Pato();
+    pato.volar();
+    final pezVolador = new PezVolador();
+    pezVolador.nadar();
+}
+
+abstract class Animal {
+ 
+}
+
+abstract class Mamiferos extends Animal {
+  
+}
+
+abstract class Aves extends Animal {
+  
+}
+
+
+abstract class Peces extends Animal {
+  
+}
+
+abstract class Volador{
+  void volar() => print('Estoy volando!!');
+}
+
+abstract class Caminante{
+  void caminar() => print('Estoy caminando!!');
+}
+
+abstract class Nadador{
+  void nadar() => print('Estoy nadando!!');
+}
+
+
+class Delfin extends Mamiferos with Nadador{}
+
+class Murcielago extends Mamiferos with Caminante, Volador{}
+
+class Gato extends Mamiferos with Caminante{}
+
+class Paloma extends Aves with Volador, Caminante{}
+
+class Pato extends Aves with Volador, Caminante, Nadador{}
+
+class Tiburon extends Peces with Nadador{}
+
+class PezVolador extends Peces with Volador, Nadador{}
+
+
+
+
+

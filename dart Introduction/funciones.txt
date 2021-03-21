@@ -1,0 +1,26 @@
+void main(){
+  
+saludar();
+String s = gg('Hola','Richii');
+  print(s);
+  String c = prueba(texto: 'Hola,', nombre:'Joel');
+  print(c);
+   String cd = prueba2(texto: 'Hola,', nombre:'Joel');
+  print(cd);
+}
+
+void saludar(){
+  print('Hola');
+}
+
+String gg(String texto, String nombre){
+  return '$texto $nombre';
+}
+
+
+String prueba({String texto, String nombre}){
+  return '$texto $nombre';
+}
+
+
+String prueba2({String texto, String nombre}) => '$texto $nombre';

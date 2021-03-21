@@ -1,0 +1,33 @@
+void main(){
+   
+  final wolverine = new Heroe(
+    nombre:'Logan',
+    poder:'Regeneracion',
+    edad:34
+  );
+  
+  print(wolverine);
+  print(wolverine.nombre);
+  print(wolverine.poder);
+  print(wolverine.edad);
+}
+
+
+class Heroe {
+  String nombre;
+  String poder;
+  int edad;
+  
+  Heroe({this.nombre, this.poder, this.edad});
+  
+ /* Heroe({String nombre = 'Sin nombre', String poder, int edad}){
+    this.nombre = nombre;
+    this.poder = poder;
+    this.edad = edad;
+  }*/
+  
+  String toString(){
+    return '${this.nombre} - ${this.poder}';
+  }
+  
+}

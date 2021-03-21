@@ -1,0 +1,42 @@
+void main(){
+  
+  List<int> numeros = [1,2,3,4,5];
+  print(numeros.length);
+  print(numeros);
+  numeros.add(6);
+  print(numeros);
+  
+  //tamanio fijo
+  List masNumeros = new List(10);
+  print(masNumeros);
+  masNumeros.add(1);
+  
+  
+}
+
+
+
+void main(){
+  
+ Map<String, dynamic> persona = {
+   'nombre'   : 'Richii' ,
+   'edad'     : 21 ,
+   'soltero'  : true
+ };
+  
+ print(persona['nombre']);
+  
+  Map<int,String> hola = {
+    1: 'Rick',
+    2: 'Peter',
+    3: 'Grace'
+  };
+  
+  hola.addAll({4:'Ally'});
+  print(hola);
+  
+  print(hola[3]);
+  
+}
+
+

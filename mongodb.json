@@ -1,0 +1,15 @@
+{
+	"nombre" : "laptop",
+	"precio" : 40.2,
+	"active" : false,
+	"created_at" : new Date("12/12/1999"),
+	"somedata" : [1, "a", ["b", 3]],
+	"factucturer" : {
+		"name" : "dell",
+		"version" : "xps",
+		"location" : {
+			"city" : "USA",
+			"address" : "New York"
+		}
+	}
+}

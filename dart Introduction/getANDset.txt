@@ -1,0 +1,29 @@
+void main(){
+  final cuadrado = new Cuadrado();
+  cuadrado._lado= 10;
+  
+  
+  print(cuadrado);
+  print ('Area: ${cuadrado.area}');
+}
+
+class Cuadrado{
+  double _area;
+  double _lado;
+  
+  set lado(double valor){
+    if(valor<=0){
+      throw("El lado no puedo ser menor o igual a cero");
+    } else {
+    
+      this._lado = valor;
+    }
+  }
+  
+  double get area{
+    return _lado * _lado;
+  }
+  
+  toString() => 'Lado: $_lado';
+  
+}
